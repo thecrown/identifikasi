@@ -13,7 +13,7 @@
 							<a href="<?php echo base_url();?>index.php/operator/tambahakun">Tambah Akun</a>
 						</li>
 						<li>
-							<a href="<?php echo base_url();?>index.php/operator/keluar">Keluar</a>
+							<a href="<?php echo base_url();?>operator/keluar">Keluar</a>
 						</li>
 					</ul>
 				</div>

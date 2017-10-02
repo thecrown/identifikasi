@@ -10,7 +10,7 @@
 							<a href="<?php echo base_url();?>index.php/operator/pengaturanakun/<?php echo $username?>">Pengaturan Akun</a>
 						</li>
 						<li>
-							<a href="<?php echo base_url();?>index.php/operator/keluar">Keluar</a>
+							<a href="<?php echo base_url();?>administrator/keluar">Keluar</a>
 						</li>
 					</ul>
 				</div>

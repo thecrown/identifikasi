@@ -10,13 +10,10 @@ class Administrator extends CI_Controller {
         $this->load->helper(array('form', 'url', 'inflector'));
         $this->load->library('form_validation', 'upload');
         $session_data = $this->session->userdata('level');
-        // if ($session_data == 'administrator') {
-        //     redirect(base_url('administrator'));
-        // } else 
-        if ($session_data == 'operator') {
+        if($session_data==false){
+            redirect(base_url());
+        }else if ($session_data !== 'administrator') {
             redirect(base_url('operator'));
-        } else {
-            redirect(base_url('index.php/'));
         }
     }
 /***********************************************************************/ //contructor
@@ -848,7 +845,7 @@ function simpankaroseri() {
     }
     function keluar() {
         $this->session->sess_destroy();
-        redirect(base_url('index.php/'));
+        redirect(base_url());
     }
 }
 
